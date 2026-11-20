@@ -1,0 +1,45 @@
+{
+  "$description": "Jeu d'essai figé pour le test de déterminisme (ne pas modifier sans mettre à jour le snapshot).",
+  "color": {
+    "light": {
+      "background": "#ffffff",
+      "surface": "#fafafa",
+      "surfaceMuted": "#f0f0f0",
+      "text": "#111111",
+      "textMuted": "#555555",
+      "border": "#dddddd",
+      "accent": "#0055ff",
+      "onAccent": "#ffffff",
+      "success": "#008844",
+      "warning": "#cc7700",
+      "danger": "#cc0033",
+      "focus": "#0055ff",
+      "overlay": "#00000080"
+    },
+    "dark": {
+      "background": "#101010",
+      "surface": "#1a1a1a",
+      "surfaceMuted": "#242424",
+      "text": "#eeeeee",
+      "textMuted": "#aaaaaa",
+      "border": "#333333",
+      "accent": "#66aaff",
+      "onAccent": "#000000",
+      "success": "#44cc88",
+      "warning": "#ffaa44",
+      "danger": "#ff5577",
+      "focus": "#99ccff",
+      "overlay": "#000000b3"
+    }
+  },
+  "font": {
+    "sans": "system-ui, sans-serif",
+    "mono": "ui-monospace, monospace"
+  },
+  "fontSize": { "xs": "0.75rem", "sm": "0.875rem", "md": "1rem", "lg": "1.25rem", "xl": "1.5rem" },
+  "space": { "xxs": "2px", "xs": "4px", "sm": "8px", "md": "12px", "lg": "16px", "xl": "24px" },
+  "radius": { "sm": "4px", "md": "8px", "lg": "12px", "pill": "999px" },
+  "borderWidth": { "thin": "1px", "thick": "2px" },
+  "shadow": { "sm": "0 1px 2px #0000001a", "md": "0 4px 12px rgba(0, 0, 0, 0.15)", "lg": "none" },
+  "duration": { "fast": "100ms", "normal": "0.2s", "slow": "300ms" }
+}

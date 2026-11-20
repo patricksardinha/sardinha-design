@@ -1,0 +1,60 @@
+{
+  "name": "sardinha-design",
+  "version": "0.1.0",
+  "description": "Système de design commun aux logiciels de Patricko : jetons (variables CSS), composants React et studio d'édition.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "author": "Patrick Sardinha",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patricksardinha/sardinha-design.git"
+  },
+  "main": "./dist/components/index.js",
+  "module": "./dist/components/index.js",
+  "types": "./dist/components/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./components.css": "./dist/components/components.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/tokens.css",
+    "dist/tokens.json",
+    "dist/components",
+    "tokens.json",
+    "README.md"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "build:components": "vite build --config vite.lib.config.ts && tsc -p tsconfig.lib.json",
+    "build": "npm run build:tokens && npm run check:styles && tsc --noEmit && npm run build:components",
+    "check:styles": "node scripts/check-hardcoded.mjs",
+    "studio": "vite",
+    "studio:build": "vite build",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "framer-motion": "^14.14.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^4.1.12"
+  }
+}

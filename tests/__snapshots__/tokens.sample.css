@@ -1,0 +1,65 @@
+/* sardinha-design — jetons générés depuis tokens.json par `npm run build:tokens`.
+   Ne pas modifier à la main : éditer tokens.json (ou `npm run studio`). */
+
+:root {
+  --font-sans: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+  --shadow-sm: 0 1px 2px #0000001a;
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: none;
+  --duration-fast: 100ms;
+  --duration-normal: 0.2s;
+  --duration-slow: 300ms;
+}
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --color-background: #ffffff;
+  --color-surface: #fafafa;
+  --color-surface-muted: #f0f0f0;
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-border: #dddddd;
+  --color-accent: #0055ff;
+  --color-on-accent: #ffffff;
+  --color-success: #008844;
+  --color-warning: #cc7700;
+  --color-danger: #cc0033;
+  --color-focus: #0055ff;
+  --color-overlay: #00000080;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: #101010;
+  --color-surface: #1a1a1a;
+  --color-surface-muted: #242424;
+  --color-text: #eeeeee;
+  --color-text-muted: #aaaaaa;
+  --color-border: #333333;
+  --color-accent: #66aaff;
+  --color-on-accent: #000000;
+  --color-success: #44cc88;
+  --color-warning: #ffaa44;
+  --color-danger: #ff5577;
+  --color-focus: #99ccff;
+  --color-overlay: #000000b3;
+}

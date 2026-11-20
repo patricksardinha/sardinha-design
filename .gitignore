@@ -1,0 +1,9 @@
+node_modules/
+# dist/ est commité (installation depuis GitHub sans construction), sauf l'aperçu statique du studio.
+dist/studio/
+*.log
+.DS_Store
+.vite/
+# Captures et script du parcours navigateur (vérification locale)
+.e2e/
+.alma/
